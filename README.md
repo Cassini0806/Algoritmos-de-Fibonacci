@@ -1,5 +1,5 @@
 # Algoritmos de Fibonacci
-Esta é uma coleção de algoritmos para a sequência de Fibonacci em diferentes linguagens de programação, inspirado pela [The Hello World Collection] (http://helloworldcollection.de).
+Esta é uma coleção de algoritmos para a sequência de Fibonacci em diferentes linguagens de programação, inspirado pela [The Hello World Collection](http://helloworldcollection.de).
 
 A sequência de Fibonacci é uma sequência de números inteiros, com valores iniciais de 0 e 1, onde cada termo é igual a soma de seus dois antecessores. Matematicamente representamos a sequência pela seguinte função:
 
