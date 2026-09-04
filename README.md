@@ -1,5 +1,5 @@
 # Algoritmos de Fibonacci
-Esta é uma coleção de algoritmos para a sequência de Fibonacci em diferentes linguagens de programação.
+Esta é uma coleção de algoritmos para a sequência de Fibonacci em diferentes linguagens de programação, inspirado pela [The Hello World Collection] (http://helloworldcollection.de).
 
 A sequência de Fibonacci é uma sequência de números inteiros, com valores iniciais de 0 e 1, onde cada termo é igual a soma de seus dois antecessores. Matematicamente representamos a sequência pela seguinte função:
 
@@ -18,27 +18,19 @@ O algoritmo implementado em todos os codigos-fonte segue uma abordagem iterativa
 ALGORITMO Fibonacci_Iterativo
 
 ENTRADA: n (inteiro não negativo)
-SAÍDA: n-ésimo número da sequência de Fibonacci
 
 INÍCIO
-    SE n <= 0 ENTÃO
-        RETORNE 0
-    FIM SE
-
-    SE n == 1 ENTÃO
-        RETORNE 1
-    FIM SE
-
     anterior <- 0
     atual <- 1
+    acumulador <- 0
 
-    PARA i DE 2 ATÉ n FAÇA
-        proximo <- anterior + atual
+    PARA i DE 0 ATÉ n FAÇA
+        ESCREVA anterior
+        acumulador <- anterior + atual
         anterior <- atual
-        atual <- proximo
+        atual <- acumulador
     FIM PARA
 
-    RETORNE atual
 FIM
 ```
 
