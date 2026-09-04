@@ -40,7 +40,7 @@ INÍCIO
 
     RETORNE atual
 FIM
-´´´
+```
 
 ## Catálogo de Linguagens Utilizadas
 
