@@ -1,14 +1,18 @@
 //Fibonacci para JavaScript
 
 function fibonacci(termos){
-	a = 0;
-	b = 1;
-	ac = 0;
+	
+	const valores = {
+		a: 0,
+		b: 1,
+		ac: 0
+	};
+
 	for (idx = 0; idx < termos; idx++){
-		console.log(a);
-		ac = a + b;
-		a = b;
-		b = ac;
+		console.log(valores.a);
+		valores.ac = valores.a + valores.b;
+		valores.a = valores.b;
+		valores.b = valores.ac;
 	}
 	return
 }

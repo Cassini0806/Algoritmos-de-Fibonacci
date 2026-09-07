@@ -2,16 +2,21 @@
 
 #include <stdio.h>
 
-int fibonacci(int termos){
+struct elementos {	
 	//Certamente há maneiras mais elegantes de representar um inteiro de 64 bits.
-	unsigned long long int a = 0;
-	unsigned long long int b = 1;
-	unsigned long long int ac = 0;
+	long long int a;
+	long long int b;
+	long long int ac;
+};
+
+int fibonacci(int termos){
+	struct elementos valores = {0, 1, 0};
+
 	for (int idx = 0; idx < termos; idx++){
-		printf("%llu\n", a);
-		ac = a + b;
-		a = b;
-		b = ac;
+		printf("%lli\n", valores.a);
+		valores.ac = valores.a + valores.b;
+		valores.a = valores.b;
+		valores.b = valores.ac;
 	}
 	return 0;
 }

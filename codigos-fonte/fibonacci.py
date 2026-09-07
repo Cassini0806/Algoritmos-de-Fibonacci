@@ -1,14 +1,12 @@
 #Fibonacci para Python
 
 def fibonacci(termos: int):
-    a = 0
-    b = 1
-    ac = 0
+    valores = dict(a=0, b=1, ac=0)
+
     for idx in range(0, termos):
-        print(a)
-        ac = a + b
-        a = b
-        b = ac
-    return None
+        print(valores['a'])
+        valores['ac'] = valores['a'] + valores['b']
+        valores['a'] = valores['b']
+        valores['b'] = valores['ac']
 
 fibonacci(64)
